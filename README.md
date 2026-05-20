@@ -1,14 +1,29 @@
 # Real-World AI Reliability Study
 
-**Independent research on how GPT-4-class models perform when real users give messy, incomplete, interrupted, or everyday-language prompts.**
+**Practical research on how GPT-4-class models perform when real users give messy, incomplete, interrupted, or everyday-language prompts.**
 
 This project studies model behavior outside clean benchmark prompts. The focus is practical reliability: whether an AI system can understand the actual job, stay on task, use context correctly, avoid unnecessary refusals, and avoid making things up when the prompt is not perfect.
 
-## Research Focus
+## Project Snapshot
+
+**Research group:** Practical AI Reliability Research Group  
+**Researcher:** Mike Bellmann  
+**Focus:** Real-world AI reliability, prompt robustness, and GPT-4-class model behavior  
+**Status:** Planning and test-design phase
+
+## Main Research Question
+
+How well do OpenAI models work when people use them in normal real-world situations, instead of only testing them with clean, perfect prompts?
+
+More specifically, this project asks whether fine-tuning can make a GPT-4-class model more consistent, useful, and reliable without making it less safe.
+
+## Why This Matters
 
 Most people do not use AI like a benchmark test. They use slang. They make typos. They talk through voice-to-text. They upload files. They change direction mid-task. They leave out details and expect the model to connect the dots.
 
-This study looks at how OpenAI models handle those normal real-world conditions.
+If AI systems are going to be useful in everyday work, they need to handle rough inputs without falling apart, over-refusing harmless requests, or making unsafe assumptions.
+
+## Research Focus
 
 Key areas:
 
@@ -21,12 +36,6 @@ Key areas:
 - Safety-boundary consistency
 - Prompt-injection and adversarial-input resistance
 - Small-business and hands-on workflow support
-
-## Main Research Question
-
-How well do OpenAI models work when people use them in normal real-world situations, instead of only testing them with clean, perfect prompts?
-
-More specifically, this project asks whether fine-tuning can make a GPT-4-class model more consistent, useful, and reliable without making it less safe.
 
 ## Test Conditions
 
@@ -70,31 +79,25 @@ Responses are reviewed for:
 - Unnecessary clarification rate
 - Recovery from unclear wording
 
-## Why This Matters
+## Current Repository Structure
 
-AI tools are increasingly used by people who are not writing perfect prompts. If models are going to be useful in everyday work, they need to handle rough inputs without falling apart or making unsafe assumptions.
+```text
+.
+├── README.md
+└── docs/
+    ├── research-plan.md
+    └── evaluation-rubric.md
+```
 
-This project is meant to help show where models are already strong, where they fail, and whether fine-tuning improves practical dependability instead of just changing the writing style.
+## Planned Additions
+
+- Sample prompt set
+- Scoring sheet template
+- Evaluation notes
+- Final summary report
 
 ## Researcher
 
 **Mike Bellmann**  
 Practical AI Reliability Research Group  
 Independent researcher / applied AI systems tester
-
-## Status
-
-Planning and test-design phase.
-
-## Repository Structure
-
-```text
-.
-├── README.md
-├── docs/
-│   ├── research-plan.md
-│   └── evaluation-rubric.md
-├── prompts/
-│   └── sample-prompts.md
-└── PROFILE-README-TEMPLATE.md
-```
